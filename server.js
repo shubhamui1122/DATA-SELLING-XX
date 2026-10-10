@@ -611,8 +611,8 @@ app.listen(PORT, () => {
 // [CONTINUED FROM PART 10]
 
 // 🛡️ SECURITY LAYER OPERATION: ANTI-INTRUSION BLACKLIST REGISTRY VANS
-db.blacklistedIps = ;
-db.systemHealthLogs = ;
+db.blacklistedIps = [];
+db.systemHealthLogs = [];
 
 // 🚫 AGENT MIDDLEWARE: WIRELESS MEDIA PACKET DECRYPTION & BAN HOOKS
 const enforceMainframeFirewallShield = (req, res, next) => {
@@ -621,11 +621,11 @@ const enforceMainframeFirewallShield = (req, res, next) => {
     // CHECK IF TARGET USER NODE IS BLACKLISTED INSIDE VOLATILE REGISTRIES
     const isIpBanned = db.blacklistedIps.includes(clientIpAddress);
     if (isIpBanned) {
-        return res.status(403).send("🚨 ACCESS DENIED: YOUR DEVICE HARDWARE SIGNATURE HAS BEEN SECURELY BANNED BY DATA-SELLING-XX DEFENSE protocolos 🔐");
+        return res.status(403).send("🚨 ACCESS DENIED: YOUR DEVICE HARDWARE SIGNATURE HAS BEEN SECURELY BANNED BY DATA-SELLING-XX DEFENSE PROTOCOLS 🔐");
     }
 
     // ⛔ SQL INJECTION & XSS HARSH SANITIZATION BALANCER
-    const inboundPayloadString = JSON.stringify(req.body);
+    const inboundPayloadString = JSON.stringify(req.body || {});
     if (inboundPayloadString.includes("SELECT *") || inboundPayloadString.includes("<script>") || inboundPayloadString.includes("UNION SELECT")) {
         db.blacklistedIps.push(clientIpAddress); // PERMANENT BAN TRIGGER
         console.log(LOG_CYBER_YELLOW, `⚠️ CRITICAL ATTACK INTERCEPTED! IP ${clientIpAddress} SUCCESSFULLY BANNED UNDER CORE PERIMETER PROTECTION LAYERS.`);
@@ -697,5 +697,3 @@ app.get('/api/owner/security/mainframe-telemetry', (req, res) => {
         systemHealthLogsHistory: db.systemHealthLogs
     });
 });
-
-// [FILE COMPLETELY WRAPPED AND ENCRYPTED - THE COMPILER CLOSES SAFELY HERE]
