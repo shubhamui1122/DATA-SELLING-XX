@@ -40,7 +40,6 @@
             position: relative;
         }
 
-        /* MATRIX BG SIMULATOR */
         body::before {
             content: '';
             position: absolute;
@@ -72,11 +71,7 @@
             0% { border-color: var(--electric-blue); box-shadow: 0 0 20px rgba(0, 229, 255, 0.15); }
             100% { border-color: var(--cyber-yellow); box-shadow: 0 0 25px rgba(255, 215, 0, 0.2); }
         }
-    </style>
-</head>
-<body>
-<!-- CONTINUES IN PART 2 -->
-/* CONTINUED FROM PART 1 */
+
         .brand-header {
             text-align: center;
             margin-bottom: 30px;
@@ -180,8 +175,7 @@
         .auth-form-block.active {
             display: block;
         }
-/* CONTINUES IN PART 3 */
-/* CONTINUED FROM PART 2 */
+
         .input-group-frame {
             margin-bottom: 20px;
             position: relative;
@@ -294,10 +288,7 @@
     </style>
 </head>
 <body>
-<!-- CONTINUES IN PART 4 -->
-<!-- CONTINUED FROM PART 3 -->
     <div class="terminal-container">
-        <!-- BRANDING HEADER WITH ACTIVE PULSE SIGNALS -->
         <div class="brand-header">
             <div class="hacker-logo-frame">
                 <i class="fa-solid fa-skull-crossbones"></i>
@@ -309,7 +300,6 @@
             </div>
         </div>
 
-        <!-- DOUBLE CORE INTERACTIVE SWITCH NAVIGATION -->
         <div class="form-toggle-wrapper">
             <button class="toggle-btn active" id="tabLoginBtn" onclick="switchSystemTab('login')">
                 <i class="fa-solid fa-right-to-bracket"></i> LOGIN
@@ -319,7 +309,6 @@
             </button>
         </div>
 
-        <!-- INTERFACE NODE 1: SECURED LOGIN CONTROL GATEWAY -->
         <div id="loginFormBlock" class="auth-form-block active">
             <form id="systemLoginForm" onsubmit="handleSystemLogin(event)">
                 <div class="input-group-frame">
@@ -331,397 +320,125 @@
                     </div>
                 </div>
 
-                <div class="input-group-frame">
-                    <label>Security Access Password</label>
-                    <div class="input-wrapper-inner">
-                        <i class="fa-solid fa-lock"></i>
-                        <input type="password" id="loginPassword" class="cyber-input" placeholder="Enter password" required>
-                    </div>
-                </div>
+Security Access Password
 
-                <div class="action-link-row">
-                    <div class="forgot-pass-trigger" onclick="triggerForgotPassword()">
-                        <i class="fa-solid fa-key"></i> Forgot Password?
-                    </div>
-                </div>
 
-                <button type="submit" class="execute-system-btn">
-                    <i class="fa-solid fa-shield-halved"></i> ACCESS TERMINAL
-                </button>
-            </form>
-        </div>
-<!-- CONTINUES IN PART 5 -->
-<!-- CONTINUED FROM PART 4 -->
-        <!-- INTERFACE NODE 2: SECURED REGISTRATION CORE GATEWAY -->
-        <div id="registerFormBlock" class="auth-form-block">
-            <form id="systemRegisterForm" onsubmit="handleSystemRegister(event)">
-                <div class="input-group-frame">
-                    <label>New Mobile Number</label>
-                    <div class="input-wrapper-inner">
-                        <i class="fa-solid fa-phone"></i>
-                        <span class="country-prefix-lock">+91</span>
-                        <input type="tel" id="regMobile" class="cyber-input phone-input" placeholder="Enter mobile" maxlength="10" required>
-                    </div>
-                </div>
 
-                <div class="input-group-frame">
-                    <label>Create Core Password</label>
-                    <div class="input-wrapper-inner">
-                        <i class="fa-solid fa-lock"></i>
-                        <input type="password" id="regPassword" class="cyber-input" placeholder="Create password" required>
-                    </div>
-                </div>
+ Forgot Password?
 
-                <div class="input-group-frame">
-                    <label>Referral Inbound Code (Optional)</label>
-                    <div class="input-wrapper-inner">
-                        <i class="fa-solid fa-network-wired"></i>
-                        <input type="text" id="regReferral" class="cyber-input" placeholder="Enter referral UID" style="padding-left:45px;">
-                    </div>
-                </div>
+ ACCESS TERMINAL
 
-                <button type="submit" class="execute-system-btn" style="background: linear-gradient(135deg, var(--electric-blue), #00b0ff); color: var(--bg-main); box-shadow: 0 0 15px rgba(0, 229, 255, 0.2);">
-                    <i class="fa-solid fa-circle-check"></i> DEPLOY NODE
-                </button>
-            </form>
-        </div>
 
-        <!-- PROTECTED COMPANY FOOTER WATERMARK LOGO -->
-        <div class="footer-terminal-note">
-            ⚙️ UNDER PROTECTION OF DATA-SELLING-XX DELEGATE CORE 🔐
-        </div>
-    </div>
+New Mobile Number
 
-    <!-- ELITE SECURITY MODULE: HARD ANTI-INTRUSION HOOK JAVASCRIPT -->
-    <script>
-        // PREMIUM SWEETALERT CUSTOMIZED DARK CYBERPUNK LAYOUT SETUP
-        const CyberAlert = Swal.mixin({
-            background: '#0c0f17',
-            color: '#ffffff',
-            confirmButtonColor: '#FFD700',
-            customClass: {
-                popup: 'cyber-toast-border'
-            }
-        });
++91
 
-        // TOAST INTERCEPT RULES FOR QUICK LIVE RESPONSES
-        function flashToast(type, titleEn, textEn, titleHi, textHi) {
-            CyberAlert.fire({
-                icon: type, 
-                html: `
-                    <div style="text-align: left; font-family: monospace;">
-                        <span style="color: var(--cyber-yellow); font-weight: bold; font-size:16px;">${titleEn}</span><br>
-                        <span style="color: #8a94a6; font-size:13px; display:inline-block; margin-bottom:8px;">${textEn}</span><br>
-                        <hr style="border-color: rgba(0,229,255,0.1); margin: 5px 0;"><br>
-                        <span style="color: var(--electric-blue); font-weight: bold; font-size:15px;">${titleHi}</span><br>
-                        <span style="color: #8a94a6; font-size:13px;">${textHi}</span>
-                    </div>
-                `,
-                confirmButtonText: '<i class="fa-solid fa-unlock-keyhole"></i> OK'
-            });
-        }
-// CONTINUES IN PART 6 -->
-// <!-- CONTINUED FROM PART 5 -->
-        // 🛡️ ELITE ANTI-HACK CONSOLE INTERCEPTION ENGINE (HARD DETECTOR SECURITY SHIELD)
-        (function() {
-            let intrusionTriggered = false;
-            
-            function lockMainframe() {
-                if (intrusionTriggered) return;
-                intrusionTriggered = true;
-                
-                document.body.innerHTML = `
-                    <div style="background:#000; color:#ff3333; width:100vw; height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; z-index:999999; font-family:monospace; text-align:center; padding:20px;">
-                        <h1 style="font-size:45px; margin-bottom:20px; text-shadow:0 0 15px #ff3333;">🚨 ANTI-HACK ALERT DEPLOYED 🚨</h1>
-                        <p style="font-size:18px; color:#aaa; max-width:600px; line-height:1.6;">
-                            <b>Unauthorized Cyber Intrusion Detected!</b> Your browser inspect console activity has breached the core security perimeter. Your device hardware signatures have been securely logged under the <b>DATA-SELLING-XX Defense Protocol</b>.
-                        </p>
-                        <br><hr style="width:100%; max-width:600px; border-color:#330000;"><br>
-                        <p style="font-size:16px; color:#ff8888;">
-                            <b>अनधिकृत साइबर घुसपैठ का पता चला!</b> आपकी ब्राउज़र कंसोल गतिविधि ने सुरक्षा परिधि को तोड़ दिया है। सुरक्षा प्रोटोकॉल के तहत आपकी आईडी और आईपी को लॉग कर लिया गया है।
-                        </p>
-                    </div>
-                `;
-                document.body.style.background = "#000";
-            }
 
-            // DETECT KEYBOARD SHORTCUTS FOR DEVTOOLS (F12, CTRL+SHIFT+I, CTRL+SHIFT+J, CTRL+U)
-            window.addEventListener('keydown', function(e) {
-                if (
-                    e.key === "F12" || 
-                    (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J" || e.key === "C")) || 
-                    (e.ctrlKey && e.key === "u")
-                ) {
-                    e.preventDefault();
-                    lockMainframe();
-                }
-            });
+Create Core Password
 
-            // INTERCEPT RIGHT CLICK LOOP
-            window.addEventListener('contextmenu', function(e) {
-                e.preventDefault();
-            });
 
-            // INLINE TIMING ELEMENT MEASUREMENT (DETECTS IF DEVTOOLS IS ALREADY OPEN SEPARATELY)
-            const threshold = 160;
-            setInterval(function() {
-                const widthThreshold = window.outerWidth - window.innerWidth > threshold;
-                const heightThreshold = window.outerHeight - window.innerHeight > threshold;
-                if (widthThreshold || heightThreshold) {
-                    lockMainframe();
-                }
-            }, 1000);
-        })();
 
-        // TAB NAVIGATION SWITCH LAYER ROUTER
-        function switchSystemTab(mode) {
-            const btnLogin = document.getElementById('tabLoginBtn');
-            const btnReg = document.getElementById('tabRegisterBtn');
-            const formLogin = document.getElementById('loginFormBlock');
-            const formReg = document.getElementById('registerFormBlock');
-            
-            btnLogin.classList.remove('active');
-            btnReg.classList.remove('active');
-            formLogin.classList.remove('active');
-            formReg.classList.remove('active');
+Referral Inbound Code (Optional)
 
-            if (mode === 'login') {
-                btnLogin.classList.add('active');
-                formLogin.classList.add('active');
-            } else {
-                btnReg.classList.add('active');
-                formReg.classList.add('active');
-            }
-        }
-// CONTINUES IN PART 7 -->
-// <!-- CONTINUED FROM PART 6 -->
-        // 🔒 FORGOT PASSWORD IMPLEMENTATION GATE (1:00 PM TO 7:00 PM TIME VAULT ROUTER)
-        function triggerForgotPassword() {
-            const currentHour = new Date().getHours();
-            
-            // SECURITY CHECK: VAULT ACTIVE WINDOW (13:00 to 19:00 ENFORCED)
-            if (currentHour < 13 || currentHour >= 19) {
-                flashToast(
-                    'warning',
-                    'Password Reset Vault is Closed!',
-                    'Security Gateway only opens between 01:00 PM and 07:00 PM. ⏱️',
-                    'पासवर्ड रीसेट वॉल्ट बंद है!',
-                    'सुरक्षा गेटवे केवल दोपहर 01:00 बजे से शाम 07:00 बजे के बीच खुलता है। ⏱️'
-                );
-                return;
-            }
 
-            // PROMPT Vault USER TO PROVIDE NUMBER FOR ROUTING
-            CyberAlert.fire({
-                title: 'PASSWORD RESET GATEWAY',
-                input: 'tel',
-                inputLabel: 'Enter Registered Mobile Number (+91 locked)',
-                inputPlaceholder: 'Enter 10 digit number',
-                showCancelButton: true,
-                confirmButtonText: '<i class="fa-solid fa-paper-plane"></i> Send to Admin',
-                inputAttributes: {
-                    maxlength: '10',
-                    autocapitalize: 'off',
-                    autocorrect: 'off'
-                },
-                inputValidator: (value) => {
-                    if (!value || value.length < 10 || isNaN(value)) {
-                        return 'Provide a valid 10-digit mobile line input!';
-                    }
-                }
-            }).then((result) => {
-                if (result.isConfirmed && result.value) {
-                    executeForgotPasswordRequest(result.value);
-                }
-            });
-        }
 
-        // DISPATCH FORGOT VAULT TO BACKEND TERMINAL ENGINE
-        function executeForgotPasswordRequest(mobileNumber) {
-            fetch('/api/auth/forgot-password', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ targetMobile: mobileNumber })
-            })
-            .then(res => res.json())
-            .then(data => {
-                if (data.success) {
-                    flashToast(
-                        'success',
-                        '🔒 Password Reset Protocol / पासवर्ड रीसेट प्रोटोकॉल',
-                        'If you have forgotten your password, please register a new account with a different mobile number, go to the GAME PROBLEM / SUPPORT section, and submit a ticket with your old registered number to our admin team. Our official channel: https://t.me/DATASELLINGXX',
-                        '🔒 Password Reset Protocol / पासवर्ड रीसेट प्रोटोकॉल',
-                        'यदि आप अपना पासवर्ड भूल गए हैं, तो कृपया किसी दूसरे मोबाइल नंबर से एक नया अकाउंट रजिस्टर करें, फिर नीचे दिए गए GAME PROBLEM / SUPPORT सेक्शन में जाएं और हमारे एडमिन टीम को अपना पुराना रजिस्टर्ड नंबर लिखकर टिकट सबमिट करें। हमारा ऑफिशियल चैनल: https://t.me/DATASELLINGXX'
-                    );
-                } else {
-                    flashToast('error', 'Gateway Error!', data.message_en, 'गेटवे त्रुटि!', data.message_hi);
-                }
-            })
-            .catch(err => {
-                flashToast(
-                    'error',
-                    'Connection Failed!',
-                    'Server synchronization failed. Secure system offline.',
-                    'कनेक्शन विफल!',
-                    'सर्वर सिंक्रोनाइज़ेशन विफल रहा। सुरक्षा प्रणाली ऑफ़लाइन है।'
-                );
-            });
-        }
-// CONTINUES IN PART 8 -->
-// <!-- CONTINUED FROM PART 7 -->
-        // 🔓 BACKEND INTEGRATION PIPELINE: TERMINAL ACCESS LOGIN HANDLER
-        function handleSystemLogin(event) {
-            event.preventDefault();
-            
-            const mobileInput = document.getElementById('loginMobile').value;
-            const passwordInput = document.getElementById('loginPassword').value;
+ DEPLOY NODE
 
-            if (mobileInput.length < 10 || isNaN(mobileInput)) {
-                flashToast('error', 'Validation Error!', 'Enter a clean 10-digit mobile entry.', 'सत्यापन त्रुटि!', 'एक साफ 10-अंकीय mobile नंबर दर्ज करें।');
-                return;
-            }
 
-            // SYNCING WITH CORE EXECUTIVE EXPRESS ENGINE
-            fetch('/api/auth/login', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    mobile: mobileInput,
-                    password: passwordInput
-                })
-            })
-            .then(res => res.json())
-            .then(data => {
-                if (data.success) {
-                    // STORE EXCLUSIVE SESSION VAULT SECURE CREDENTIALS
-                    localStorage.setItem('ds_xx_token', data.token);
-                    localStorage.setItem('ds_xx_uid', data.uid);
-                    
-                    flashToast(
-                        'success',
-                        'Mainframe Decrypted!',
-                        'Access granted safely. Connecting your bandwidth node... 🔓🚀',
-                        'MAIN FRAME DECRYPTED!',
-                        'पहुंच सुरक्षित रूप से प्रदान की गई। आपके बैंडविड्थ नोड को जोड़ा जा रहा है... 🔓🚀'
-                    );
-                    
-                    // AUTO ROUTE ROUTING REDIRECT SYSTEM AFTER DELAY SUCCESS WINDOW
-                    setTimeout(() => {
-                        window.location.href = '/home.html';
-                    }, 2000);
-                } else {
-                    flashToast('error', 'Access Blocked!', data.message_en, 'पहुंच ब्लॉक!', data.message_hi);
-                }
-            })
-            .catch(err => {
-                flashToast(
-                    'error',
-                    'Terminal Node Offline!',
-                    'Main database sync failure. Core framework protection layer blocking communication.',
-                    'टर्मिनल नोड ऑफ़लाइन!',
-                    'मुख्य डेटाबेस सिंक विफलता। कोर फ्रेमवर्क सुरक्षा परत संचार को अवरुद्ध कर रही है।'
-                );
-            });
-        }
-// CONTINUES IN PART 9 -->
-// <!-- CONTINUED FROM PART 8 -->
-        // 🔑 BACKEND INTEGRATION PIPELINE: NODE DEPLOYMENT REGISTRATION HANDLER
-        function handleSystemRegister(event) {
-            event.preventDefault();
+⚙️ UNDER PROTECTION OF DATA-SELLING-XX DELEGATE CORE 🔐
 
-            const regMobileInput = document.getElementById('regMobile').value;
-            const regPasswordInput = document.getElementById('regPassword').value;
-            const regReferralInput = document.getElementById('regReferral').value;
-
-            if (regMobileInput.length < 10 || isNaN(regMobileInput)) {
-                flashToast('error', 'Validation Error!', 'Mobile framework inputs must be exactly 10 digits.', 'सत्यापन त्रुटि!', 'मोबाइल इनपुट बिल्कुल 10 अंकों का होना चाहिए।');
-                return;
-            }
-
-            // ATTEMPT TO FORCE DEPLOY INTO NETWORK CORE
-            fetch('/api/auth/register', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    mobile: regMobileInput,
-                    password: regPasswordInput,
-                    referralCode: regReferralInput || null
-                })
-            })
-            .then(res => res.json())
-            .then(data => {
-                if (data.success) {
-                    flashToast(
-                        'success',
-                        'Welcome to the Empire!',
-                        `Account created successfully. Your unique assigned UID is: ${data.uid}. Switching to login window... 🎉`,
-                        'साम्राज्य में आपका स्वागत है!',
-                        `अकाउंट सफलतापूर्वक बन गया है। आपकी विशिष्ट यूआईडी है: ${data.uid}। लॉगिन विंडो पर जा रहे हैं... 🎉`
-                    );
-                    
-                    // RE-ROUTE TOGGLE ENGINE ARMED FOR AUTO SHIFT
-                    setTimeout(() => {
-                        switchSystemTab('login');
-                        document.getElementById('loginMobile').value = regMobileInput;
-                        document.getElementById('systemRegisterForm').reset();
-                    }, 3500);
-                } else {
-                    // CATCH STRICT ONE-MOBILE LOCK ERROR CODE PROMPT FROM SERVER
-                    flashToast('error', 'Registration Blocked!', data.message_en, 'पंजीकरण ब्लॉक!', data.message_hi);
-                }
-            })
-            .catch(err => {
-                flashToast(
-                    'error',
-                    'Registry Synchronization Failed!',
-                    'Core compiler denied communication pipe link network.',
-                    'रजिस्ट्री सिंक्रोनाइज़ेशन विफल!',
-                    'कोर कंपाइलर ने संचार पाइप लिंक नेटवर्क को अस्वीकार कर दिया।'
-                );
-            });
-        }
-// CONTINUES IN PART 10 -->
-// <!-- CONTINUED FROM PART 9 -->
-        // 🔄 AUTO-LOGIN NODES VALIDATION STATE ENGINE ON INITIAL PAGE BOOTUP
-        window.addEventListener('DOMContentLoaded', () => {
-            const preservedToken = localStorage.getItem('ds_xx_token');
-            const preservedUid = localStorage.getItem('ds_xx_uid');
-            
-            if (preservedToken && preservedUid) {
-                // AUTO COMPILER REDIRECT TO HOME BRIDGE NODE SAVING USER EFFORT
-                window.location.href = '/home.html';
-            }
-
-            // DYNAMIC INJECTION OF ULTRA-PREMIUM TOAST STYLING INTERFACES VIA DOM OVERRIDES
-            const styleElement = document.createElement('style');
-            styleElement.innerHTML = `
-                .cyber-toast-border {
-                    border: 2px solid var(--cyber-yellow) !important;
-                    box-shadow: 0 0 20px rgba(255, 215, 0, 0.25) !important;
-                    border-radius: 12px !important;
-                }
-                .swal2-html-container {
-                    margin: 15px !important;
-                    overflow: hidden !important;
-                }
-                .swal2-icon {
-                    border-color: var(--electric-blue) !important;
-                    color: var(--electric-blue) !important;
-                }
-                .swal2-icon.swal2-error {
-                    border-color: var(--danger-red) !important;
-                    color: var(--danger-red) !important;
-                }
-                .swal2-icon.swal2-error [class^=swal2-x-mark-line] {
-                    background-color: var(--danger-red) !important;
-                }
-                .swal2-icon.swal2-warning {
-                    border-color: var(--cyber-yellow) !important;
-                    color: var(--cyber-yellow) !important;
-                }
-            `;
-            document.head.appendChild(styleElement);
-        });
-    </script>
-</body>
-</html>
+(function() {
+let intrusionTriggered = false;
+function lockMainframe() {
+if (intrusionTriggered) return;
+intrusionTriggered = true;
+document.body.innerHTML = <div style="background:#000; color:#ff3333; width:100vw; height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; z-index:999999; font-family:monospace; text-align:center; padding:20px;"> <h1 style="font-size:45px; margin-bottom:20px; text-shadow:0 0 15px #ff3333;">🚨 ANTI-HACK ALERT DEPLOYED 🚨</h1> <p style="font-size:18px; color:#aaa; max-width:600px; line-height:1.6;"> <b>Unauthorized Cyber Intrusion Detected!</b> Your browser inspect console activity has breached the core security perimeter. Your device hardware signatures have been securely logged under the <b>DATA-SELLING-XX Defense Protocol</b>. </p> <br><hr style="width:100%; max-width:600px; border-color:#330000;"><br> <p style="font-size:16px; color:#ff8888;"> <b>अनधिकृत साइबर घुसपैठ का पता चला!</b> आपकी ब्राउज़र कंसोल गतिविधि ने सुरक्षा परिधि को तोड़ दिया है। सुरक्षा प्रोटोकॉल के तहत आपकी आईडी और आईपी को लॉग कर लिया गया है। </p> </div>;
+document.body.style.background = "#000";
+}
+window.addEventListener('keydown', function(e) {
+if (e.key === "F12" || (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J" || e.key === "C")) || (e.ctrlKey && e.key === "u")) {
+e.preventDefault();
+lockMainframe();
+}
+});
+window.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+})();
+function switchSystemTab(mode) {
+const btnLogin = document.getElementById('tabLoginBtn');
+const btnReg = document.getElementById('tabRegisterBtn');
+const formLogin = document.getElementById('loginFormBlock');
+const formReg = document.getElementById('registerFormBlock');
+btnLogin.classList.remove('active');
+btnReg.classList.remove('active');
+formLogin.classList.remove('active');
+formReg.classList.remove('active');
+if (mode === 'login') {
+btnLogin.classList.add('active');
+formLogin.classList.add('active');
+} else {
+btnReg.classList.add('active');
+formReg.classList.add('active');
+}
+}
+function triggerForgotPassword() {
+const currentHour = new Date().getHours();
+if (currentHour < 13 || currentHour >= 19) {
+Swal.fire({
+icon: 'warning',
+background: '#0c0f17',
+color: '#fff',
+confirmButtonColor: '#FFD700',
+title: 'Vault Closed!',
+text: 'Gateway only opens between 01:00 PM and 07:00 PM.'
+});
+return;
+}
+Swal.fire({
+icon: 'success',
+background: '#0c0f17',
+color: '#fff',
+confirmButtonColor: '#FFD700',
+title: 'Password Reset Gateway',
+text: 'If you have forgotten your password, contact our admin team on our official channel: t.me'
+});
+}
+function handleSystemLogin(event) {
+event.preventDefault();
+const mobileInput = document.getElementById('loginMobile').value;
+const passwordInput = document.getElementById('loginPassword').value;
+fetch('/api/auth/login', {
+method: 'POST',
+headers: { 'Content-Type': 'application/json' },
+body: JSON.stringify({ mobile: mobileInput, password: passwordInput })
+})
+.then(res => res.json())
+.then(data => {
+if (data.success) {
+localStorage.setItem('ds_xx_token', data.token);
+localStorage.setItem('ds_xx_uid', data.uid);
+window.location.href = '/home.html';
+} else {
+Swal.fire({ icon: 'error', background: '#0c0f17', color: '#fff', title: 'Blocked!', text: data.message_en });
+}
+});
+}
+function handleSystemRegister(event) {
+event.preventDefault();
+const regMobileInput = document.getElementById('regMobile').value;
+const regPasswordInput = document.getElementById('regPassword').value;
+const regReferralInput = document.getElementById('regReferral').value;
+fetch('/api/auth/register', {
+method: 'POST',
+headers: { 'Content-Type': 'application/json' },
+body: JSON.stringify({ mobile: regMobileInput, password: regPasswordInput, referralCode: regReferralInput || null })
+})
+.then(res => res.json())
+.then(data => {
+if (data.success) {
+Swal.fire({ icon: 'success', background: '#0c0f17', color: '#fff', title: 'Deployed!', text: UID: ${data.uid}. Switching to login... });
+setTimeout(() => { switchSystemTab('login'); }, 3000);
+} else {
+Swal.fire({ icon: 'error', background: '#0c0f17', color: '#fff', title: 'Error!', text: data.message_en });
+}
+});
+}
