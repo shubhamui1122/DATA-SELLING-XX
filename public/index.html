@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚠️ SYSTEM TERMINAL: DATA-SELLING-XX 🏴‍☠️</title>
+    <!-- SWEETALERT2 FOR DUAL-LANGUAGE PREMIUM TOAST MESSAGES -->
+    <script src="https://jsdelivr.net"></script>
+    <!-- FONT AWESOME FOR CYBERPUNK ICONS -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    
+    <style>
+        /* 🎨 CUSTOM PREMIUM CYBERPUNK YELLOW & ELECTRIC BLUE PALETTE */
+        :root {
+            --bg-main: #060709;
+            --bg-card: #0c0f17;
+            --cyber-yellow: #FFD700;
+            --electric-blue: #00E5FF;
+            --danger-red: #FF3333;
+            --text-gray: #8a94a6;
+            --pure-white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            user-select: none;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--pure-white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* MATRIX BG SIMULATOR */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 229, 255, 0.02) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(255, 215, 0, 0.02) 1px, transparent 1px);
+            background-size: 20px 20px;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .terminal-container {
+            width: 100%;
+            max-width: 420px;
+            padding: 25px;
+            background: var(--bg-card);
+            border: 2px solid var(--electric-blue);
+            border-radius: 16px;
+            box-shadow: 0 0 25px rgba(0, 229, 255, 0.15), inset 0 0 10px rgba(255, 215, 0, 0.05);
+            z-index: 10;
+            position: relative;
+            animation: borderPulse 4s infinite alternate;
+        }
+
+        @keyframes borderPulse {
+            0% { border-color: var(--electric-blue); box-shadow: 0 0 20px rgba(0, 229, 255, 0.15); }
+            100% { border-color: var(--cyber-yellow); box-shadow: 0 0 25px rgba(255, 215, 0, 0.2); }
+        }
+    </style>
+</head>
+<body>
+<!-- CONTINUES IN PART 2 -->
+/* CONTINUED FROM PART 1 */
+        .brand-header {
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .hacker-logo-frame {
+            width: 85px;
+            height: 85px;
+            background: #111622;
+            border: 2px dashed var(--cyber-yellow);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 15px;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+            animation: spinLogo 20s linear infinite;
+        }
+
+        @keyframes spinLogo {
+            100% { transform: rotate(360deg); }
+        }
+
+        .hacker-logo-frame i {
+            font-size: 38px;
+            color: var(--electric-blue);
+            text-shadow: 0 0 10px var(--electric-blue);
+        }
+
+        .brand-title {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--cyber-yellow);
+            letter-spacing: 1.5px;
+            text-shadow: 0 0 8px rgba(255, 215, 0, 0.3);
+            margin-bottom: 5px;
+        }
+
+        .server-status-bar {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(0, 229, 255, 0.05);
+            padding: 4px 12px;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 229, 255, 0.2);
+            font-size: 11px;
+            color: var(--electric-blue);
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .pulse-dot {
+            width: 7px;
+            height: 7px;
+            background-color: #00FF66;
+            border-radius: 50%;
+            box-shadow: 0 0 8px #00FF66;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(0.9); opacity: 0.6; }
+            50% { transform: scale(1.2); opacity: 1; box-shadow: 0 0 12px #00FF66; }
+            100% { transform: scale(0.9); opacity: 0.6; }
+        }
+
+        .form-toggle-wrapper {
+            display: flex;
+            background: #111522;
+            padding: 5px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            border: 1px solid rgba(255, 215, 0, 0.1);
+        }
+
+        .toggle-btn {
+            flex: 1;
+            padding: 10px;
+            background: transparent;
+            border: none;
+            color: var(--text-gray);
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .toggle-btn.active {
+            background: linear-gradient(135deg, var(--electric-blue), #00b0ff);
+            color: var(--bg-main);
+            box-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+        }
+
+        .auth-form-block {
+            display: none;
+        }
+
+        .auth-form-block.active {
+            display: block;
+        }
+/* CONTINUES IN PART 3 */
+/* CONTINUED FROM PART 2 */
+        .input-group-frame {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .input-group-frame label {
+            display: block;
+            font-size: 12px;
+            color: var(--text-gray);
+            margin-bottom: 8px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .input-wrapper-inner {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .input-wrapper-inner i {
+            position: absolute;
+            left: 15px;
+            color: var(--electric-blue);
+            font-size: 16px;
+        }
+
+        .cyber-input {
+            width: 100%;
+            padding: 14px 15px 14px 45px;
+            background: #090c13;
+            border: 1px solid rgba(0, 229, 255, 0.2);
+            border-radius: 10px;
+            color: var(--pure-white);
+            font-size: 15px;
+            font-weight: 600;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .cyber-input:focus {
+            border-color: var(--cyber-yellow);
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.15);
+            background: #0d121f;
+        }
+
+        .country-prefix-lock {
+            position: absolute;
+            left: 45px;
+            font-weight: 700;
+            color: var(--cyber-yellow);
+            font-size: 15px;
+            pointer-events: none;
+        }
+
+        .cyber-input.phone-input {
+            padding-left: 80px;
+        }
+
+        .action-link-row {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 25px;
+        }
+
+        .forgot-pass-trigger {
+            color: var(--text-gray);
+            font-size: 12px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+
+        .forgot-pass-trigger:hover {
+            color: var(--cyber-yellow);
+            text-shadow: 0 0 5px var(--cyber-yellow);
+        }
+
+        .execute-system-btn {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, var(--cyber-yellow), #e6c200);
+            border: none;
+            border-radius: 10px;
+            color: var(--bg-main);
+            font-size: 16px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+        }
+
+        .execute-system-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 22px rgba(255, 215, 0, 0.4);
+        }
+
+        .footer-terminal-note {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 10px;
+            color: rgba(138, 148, 166, 0.5);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+<!-- CONTINUES IN PART 4 -->
+<!-- CONTINUED FROM PART 3 -->
+    <div class="terminal-container">
+        <!-- BRANDING HEADER WITH ACTIVE PULSE SIGNALS -->
+        <div class="brand-header">
+            <div class="hacker-logo-frame">
+                <i class="fa-solid fa-skull-crossbones"></i>
+            </div>
+            <div class="brand-title">DATA-SELLING-XX</div>
+            <div class="server-status-bar">
+                <span class="pulse-dot"></span>
+                <span>24/7 LIVE SERVER ONLINE</span>
+            </div>
+        </div>
+
+        <!-- DOUBLE CORE INTERACTIVE SWITCH NAVIGATION -->
+        <div class="form-toggle-wrapper">
+            <button class="toggle-btn active" id="tabLoginBtn" onclick="switchSystemTab('login')">
+                <i class="fa-solid fa-right-to-bracket"></i> LOGIN
+            </button>
+            <button class="toggle-btn" id="tabRegisterBtn" onclick="switchSystemTab('register')">
+                <i class="fa-solid fa-user-plus"></i> REGISTER
+            </button>
+        </div>
+
+        <!-- INTERFACE NODE 1: SECURED LOGIN CONTROL GATEWAY -->
+        <div id="loginFormBlock" class="auth-form-block active">
+            <form id="systemLoginForm" onsubmit="handleSystemLogin(event)">
+                <div class="input-group-frame">
+                    <label>Registered Mobile Number</label>
+                    <div class="input-wrapper-inner">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="country-prefix-lock">+91</span>
+                        <input type="tel" id="loginMobile" class="cyber-input phone-input" placeholder="Enter number" maxlength="10" required>
+                    </div>
+                </div>
+
+                <div class="input-group-frame">
+                    <label>Security Access Password</label>
+                    <div class="input-wrapper-inner">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="loginPassword" class="cyber-input" placeholder="Enter password" required>
+                    </div>
+                </div>
+
+                <div class="action-link-row">
+                    <div class="forgot-pass-trigger" onclick="triggerForgotPassword()">
+                        <i class="fa-solid fa-key"></i> Forgot Password?
+                    </div>
+                </div>
+
+                <button type="submit" class="execute-system-btn">
+                    <i class="fa-solid fa-shield-halved"></i> ACCESS TERMINAL
+                </button>
+            </form>
+        </div>
+<!-- CONTINUES IN PART 5 -->
+<!-- CONTINUED FROM PART 4 -->
+        <!-- INTERFACE NODE 2: SECURED REGISTRATION CORE GATEWAY -->
+        <div id="registerFormBlock" class="auth-form-block">
+            <form id="systemRegisterForm" onsubmit="handleSystemRegister(event)">
+                <div class="input-group-frame">
+                    <label>New Mobile Number</label>
+                    <div class="input-wrapper-inner">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="country-prefix-lock">+91</span>
+                        <input type="tel" id="regMobile" class="cyber-input phone-input" placeholder="Enter mobile" maxlength="10" required>
+                    </div>
+                </div>
+
+                <div class="input-group-frame">
+                    <label>Create Core Password</label>
+                    <div class="input-wrapper-inner">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="regPassword" class="cyber-input" placeholder="Create password" required>
+                    </div>
+                </div>
+
+                <div class="input-group-frame">
+                    <label>Referral Inbound Code (Optional)</label>
+                    <div class="input-wrapper-inner">
+                        <i class="fa-solid fa-network-wired"></i>
+                        <input type="text" id="regReferral" class="cyber-input" placeholder="Enter referral UID" style="padding-left:45px;">
+                    </div>
+                </div>
+
+                <button type="submit" class="execute-system-btn" style="background: linear-gradient(135deg, var(--electric-blue), #00b0ff); color: var(--bg-main); box-shadow: 0 0 15px rgba(0, 229, 255, 0.2);">
+                    <i class="fa-solid fa-circle-check"></i> DEPLOY NODE
+                </button>
+            </form>
+        </div>
+
+        <!-- PROTECTED COMPANY FOOTER WATERMARK LOGO -->
+        <div class="footer-terminal-note">
+            ⚙️ UNDER PROTECTION OF DATA-SELLING-XX DELEGATE CORE 🔐
+        </div>
+    </div>
+
+    <!-- ELITE SECURITY MODULE: HARD ANTI-INTRUSION HOOK JAVASCRIPT -->
+    <script>
+        // PREMIUM SWEETALERT CUSTOMIZED DARK CYBERPUNK LAYOUT SETUP
+        const CyberAlert = Swal.mixin({
+            background: '#0c0f17',
+            color: '#ffffff',
+            confirmButtonColor: '#FFD700',
+            customClass: {
+                popup: 'cyber-toast-border'
+            }
+        });
+
+        // TOAST INTERCEPT RULES FOR QUICK LIVE RESPONSES
+        function flashToast(type, titleEn, textEn, titleHi, textHi) {
+            CyberAlert.fire({
+                icon: type, 
+                html: `
+                    <div style="text-align: left; font-family: monospace;">
+                        <span style="color: var(--cyber-yellow); font-weight: bold; font-size:16px;">${titleEn}</span><br>
+                        <span style="color: #8a94a6; font-size:13px; display:inline-block; margin-bottom:8px;">${textEn}</span><br>
+                        <hr style="border-color: rgba(0,229,255,0.1); margin: 5px 0;"><br>
+                        <span style="color: var(--electric-blue); font-weight: bold; font-size:15px;">${titleHi}</span><br>
+                        <span style="color: #8a94a6; font-size:13px;">${textHi}</span>
+                    </div>
+                `,
+                confirmButtonText: '<i class="fa-solid fa-unlock-keyhole"></i> OK'
+            });
+        }
+// CONTINUES IN PART 6 -->
+// <!-- CONTINUED FROM PART 5 -->
+        // 🛡️ ELITE ANTI-HACK CONSOLE INTERCEPTION ENGINE (HARD DETECTOR SECURITY SHIELD)
+        (function() {
+            let intrusionTriggered = false;
+            
+            function lockMainframe() {
+                if (intrusionTriggered) return;
+                intrusionTriggered = true;
+                
+                document.body.innerHTML = `
+                    <div style="background:#000; color:#ff3333; width:100vw; height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; z-index:999999; font-family:monospace; text-align:center; padding:20px;">
+                        <h1 style="font-size:45px; margin-bottom:20px; text-shadow:0 0 15px #ff3333;">🚨 ANTI-HACK ALERT DEPLOYED 🚨</h1>
+                        <p style="font-size:18px; color:#aaa; max-width:600px; line-height:1.6;">
+                            <b>Unauthorized Cyber Intrusion Detected!</b> Your browser inspect console activity has breached the core security perimeter. Your device hardware signatures have been securely logged under the <b>DATA-SELLING-XX Defense Protocol</b>.
+                        </p>
+                        <br><hr style="width:100%; max-width:600px; border-color:#330000;"><br>
+                        <p style="font-size:16px; color:#ff8888;">
+                            <b>अनधिकृत साइबर घुसपैठ का पता चला!</b> आपकी ब्राउज़र कंसोल गतिविधि ने सुरक्षा परिधि को तोड़ दिया है। सुरक्षा प्रोटोकॉल के तहत आपकी आईडी और आईपी को लॉग कर लिया गया है।
+                        </p>
+                    </div>
+                `;
+                document.body.style.background = "#000";
+            }
+
+            // DETECT KEYBOARD SHORTCUTS FOR DEVTOOLS (F12, CTRL+SHIFT+I, CTRL+SHIFT+J, CTRL+U)
+            window.addEventListener('keydown', function(e) {
+                if (
+                    e.key === "F12" || 
+                    (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J" || e.key === "C")) || 
+                    (e.ctrlKey && e.key === "u")
+                ) {
+                    e.preventDefault();
+                    lockMainframe();
+                }
+            });
+
+            // INTERCEPT RIGHT CLICK LOOP
+            window.addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+            });
+
+            // INLINE TIMING ELEMENT MEASUREMENT (DETECTS IF DEVTOOLS IS ALREADY OPEN SEPARATELY)
+            const threshold = 160;
+            setInterval(function() {
+                const widthThreshold = window.outerWidth - window.innerWidth > threshold;
+                const heightThreshold = window.outerHeight - window.innerHeight > threshold;
+                if (widthThreshold || heightThreshold) {
+                    lockMainframe();
+                }
+            }, 1000);
+        })();
+
+        // TAB NAVIGATION SWITCH LAYER ROUTER
+        function switchSystemTab(mode) {
+            const btnLogin = document.getElementById('tabLoginBtn');
+            const btnReg = document.getElementById('tabRegisterBtn');
+            const formLogin = document.getElementById('loginFormBlock');
+            const formReg = document.getElementById('registerFormBlock');
+            
+            btnLogin.classList.remove('active');
+            btnReg.classList.remove('active');
+            formLogin.classList.remove('active');
+            formReg.classList.remove('active');
+
+            if (mode === 'login') {
+                btnLogin.classList.add('active');
+                formLogin.classList.add('active');
+            } else {
+                btnReg.classList.add('active');
+                formReg.classList.add('active');
+            }
+        }
+// CONTINUES IN PART 7 -->
+// <!-- CONTINUED FROM PART 6 -->
+        // 🔒 FORGOT PASSWORD IMPLEMENTATION GATE (1:00 PM TO 7:00 PM TIME VAULT ROUTER)
+        function triggerForgotPassword() {
+            const currentHour = new Date().getHours();
+            
+            // SECURITY CHECK: VAULT ACTIVE WINDOW (13:00 to 19:00 ENFORCED)
+            if (currentHour < 13 || currentHour >= 19) {
+                flashToast(
+                    'warning',
+                    'Password Reset Vault is Closed!',
+                    'Security Gateway only opens between 01:00 PM and 07:00 PM. ⏱️',
+                    'पासवर्ड रीसेट वॉल्ट बंद है!',
+                    'सुरक्षा गेटवे केवल दोपहर 01:00 बजे से शाम 07:00 बजे के बीच खुलता है। ⏱️'
+                );
+                return;
+            }
+
+            // PROMPT Vault USER TO PROVIDE NUMBER FOR ROUTING
+            CyberAlert.fire({
+                title: 'PASSWORD RESET GATEWAY',
+                input: 'tel',
+                inputLabel: 'Enter Registered Mobile Number (+91 locked)',
+                inputPlaceholder: 'Enter 10 digit number',
+                showCancelButton: true,
+                confirmButtonText: '<i class="fa-solid fa-paper-plane"></i> Send to Admin',
+                inputAttributes: {
+                    maxlength: '10',
+                    autocapitalize: 'off',
+                    autocorrect: 'off'
+                },
+                inputValidator: (value) => {
+                    if (!value || value.length < 10 || isNaN(value)) {
+                        return 'Provide a valid 10-digit mobile line input!';
+                    }
+                }
+            }).then((result) => {
+                if (result.isConfirmed && result.value) {
+                    executeForgotPasswordRequest(result.value);
+                }
+            });
+        }
+
+        // DISPATCH FORGOT VAULT TO BACKEND TERMINAL ENGINE
+        function executeForgotPasswordRequest(mobileNumber) {
+            fetch('/api/auth/forgot-password', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ targetMobile: mobileNumber })
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    flashToast(
+                        'success',
+                        '🔒 Password Reset Protocol / पासवर्ड रीसेट प्रोटोकॉल',
+                        'If you have forgotten your password, please register a new account with a different mobile number, go to the GAME PROBLEM / SUPPORT section, and submit a ticket with your old registered number to our admin team. Our official channel: https://t.me/DATASELLINGXX',
+                        '🔒 Password Reset Protocol / पासवर्ड रीसेट प्रोटोकॉल',
+                        'यदि आप अपना पासवर्ड भूल गए हैं, तो कृपया किसी दूसरे मोबाइल नंबर से एक नया अकाउंट रजिस्टर करें, फिर नीचे दिए गए GAME PROBLEM / SUPPORT सेक्शन में जाएं और हमारे एडमिन टीम को अपना पुराना रजिस्टर्ड नंबर लिखकर टिकट सबमिट करें। हमारा ऑफिशियल चैनल: https://t.me/DATASELLINGXX'
+                    );
+                } else {
+                    flashToast('error', 'Gateway Error!', data.message_en, 'गेटवे त्रुटि!', data.message_hi);
+                }
+            })
+            .catch(err => {
+                flashToast(
+                    'error',
+                    'Connection Failed!',
+                    'Server synchronization failed. Secure system offline.',
+                    'कनेक्शन विफल!',
+                    'सर्वर सिंक्रोनाइज़ेशन विफल रहा। सुरक्षा प्रणाली ऑफ़लाइन है।'
+                );
+            });
+        }
+// CONTINUES IN PART 8 -->
+// <!-- CONTINUED FROM PART 7 -->
+        // 🔓 BACKEND INTEGRATION PIPELINE: TERMINAL ACCESS LOGIN HANDLER
+        function handleSystemLogin(event) {
+            event.preventDefault();
+            
+            const mobileInput = document.getElementById('loginMobile').value;
+            const passwordInput = document.getElementById('loginPassword').value;
+
+            if (mobileInput.length < 10 || isNaN(mobileInput)) {
+                flashToast('error', 'Validation Error!', 'Enter a clean 10-digit mobile entry.', 'सत्यापन त्रुटि!', 'एक साफ 10-अंकीय mobile नंबर दर्ज करें।');
+                return;
+            }
+
+            // SYNCING WITH CORE EXECUTIVE EXPRESS ENGINE
+            fetch('/api/auth/login', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    mobile: mobileInput,
+                    password: passwordInput
+                })
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    // STORE EXCLUSIVE SESSION VAULT SECURE CREDENTIALS
+                    localStorage.setItem('ds_xx_token', data.token);
+                    localStorage.setItem('ds_xx_uid', data.uid);
+                    
+                    flashToast(
+                        'success',
+                        'Mainframe Decrypted!',
+                        'Access granted safely. Connecting your bandwidth node... 🔓🚀',
+                        'MAIN FRAME DECRYPTED!',
+                        'पहुंच सुरक्षित रूप से प्रदान की गई। आपके बैंडविड्थ नोड को जोड़ा जा रहा है... 🔓🚀'
+                    );
+                    
+                    // AUTO ROUTE ROUTING REDIRECT SYSTEM AFTER DELAY SUCCESS WINDOW
+                    setTimeout(() => {
+                        window.location.href = '/home.html';
+                    }, 2000);
+                } else {
+                    flashToast('error', 'Access Blocked!', data.message_en, 'पहुंच ब्लॉक!', data.message_hi);
+                }
+            })
+            .catch(err => {
+                flashToast(
+                    'error',
+                    'Terminal Node Offline!',
+                    'Main database sync failure. Core framework protection layer blocking communication.',
+                    'टर्मिनल नोड ऑफ़लाइन!',
+                    'मुख्य डेटाबेस सिंक विफलता। कोर फ्रेमवर्क सुरक्षा परत संचार को अवरुद्ध कर रही है।'
+                );
+            });
+        }
+// CONTINUES IN PART 9 -->
+// <!-- CONTINUED FROM PART 8 -->
+        // 🔑 BACKEND INTEGRATION PIPELINE: NODE DEPLOYMENT REGISTRATION HANDLER
+        function handleSystemRegister(event) {
+            event.preventDefault();
+
+            const regMobileInput = document.getElementById('regMobile').value;
+            const regPasswordInput = document.getElementById('regPassword').value;
+            const regReferralInput = document.getElementById('regReferral').value;
+
+            if (regMobileInput.length < 10 || isNaN(regMobileInput)) {
+                flashToast('error', 'Validation Error!', 'Mobile framework inputs must be exactly 10 digits.', 'सत्यापन त्रुटि!', 'मोबाइल इनपुट बिल्कुल 10 अंकों का होना चाहिए।');
+                return;
+            }
+
+            // ATTEMPT TO FORCE DEPLOY INTO NETWORK CORE
+            fetch('/api/auth/register', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    mobile: regMobileInput,
+                    password: regPasswordInput,
+                    referralCode: regReferralInput || null
+                })
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    flashToast(
+                        'success',
+                        'Welcome to the Empire!',
+                        `Account created successfully. Your unique assigned UID is: ${data.uid}. Switching to login window... 🎉`,
+                        'साम्राज्य में आपका स्वागत है!',
+                        `अकाउंट सफलतापूर्वक बन गया है। आपकी विशिष्ट यूआईडी है: ${data.uid}। लॉगिन विंडो पर जा रहे हैं... 🎉`
+                    );
+                    
+                    // RE-ROUTE TOGGLE ENGINE ARMED FOR AUTO SHIFT
+                    setTimeout(() => {
+                        switchSystemTab('login');
+                        document.getElementById('loginMobile').value = regMobileInput;
+                        document.getElementById('systemRegisterForm').reset();
+                    }, 3500);
+                } else {
+                    // CATCH STRICT ONE-MOBILE LOCK ERROR CODE PROMPT FROM SERVER
+                    flashToast('error', 'Registration Blocked!', data.message_en, 'पंजीकरण ब्लॉक!', data.message_hi);
+                }
+            })
+            .catch(err => {
+                flashToast(
+                    'error',
+                    'Registry Synchronization Failed!',
+                    'Core compiler denied communication pipe link network.',
+                    'रजिस्ट्री सिंक्रोनाइज़ेशन विफल!',
+                    'कोर कंपाइलर ने संचार पाइप लिंक नेटवर्क को अस्वीकार कर दिया।'
+                );
+            });
+        }
+// CONTINUES IN PART 10 -->
+// <!-- CONTINUED FROM PART 9 -->
+        // 🔄 AUTO-LOGIN NODES VALIDATION STATE ENGINE ON INITIAL PAGE BOOTUP
+        window.addEventListener('DOMContentLoaded', () => {
+            const preservedToken = localStorage.getItem('ds_xx_token');
+            const preservedUid = localStorage.getItem('ds_xx_uid');
+            
+            if (preservedToken && preservedUid) {
+                // AUTO COMPILER REDIRECT TO HOME BRIDGE NODE SAVING USER EFFORT
+                window.location.href = '/home.html';
+            }
+
+            // DYNAMIC INJECTION OF ULTRA-PREMIUM TOAST STYLING INTERFACES VIA DOM OVERRIDES
+            const styleElement = document.createElement('style');
+            styleElement.innerHTML = `
+                .cyber-toast-border {
+                    border: 2px solid var(--cyber-yellow) !important;
+                    box-shadow: 0 0 20px rgba(255, 215, 0, 0.25) !important;
+                    border-radius: 12px !important;
+                }
+                .swal2-html-container {
+                    margin: 15px !important;
+                    overflow: hidden !important;
+                }
+                .swal2-icon {
+                    border-color: var(--electric-blue) !important;
+                    color: var(--electric-blue) !important;
+                }
+                .swal2-icon.swal2-error {
+                    border-color: var(--danger-red) !important;
+                    color: var(--danger-red) !important;
+                }
+                .swal2-icon.swal2-error [class^=swal2-x-mark-line] {
+                    background-color: var(--danger-red) !important;
+                }
+                .swal2-icon.swal2-warning {
+                    border-color: var(--cyber-yellow) !important;
+                    color: var(--cyber-yellow) !important;
+                }
+            `;
+            document.head.appendChild(styleElement);
+        });
+    </script>
+</body>
+</html>
